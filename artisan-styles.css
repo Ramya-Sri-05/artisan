@@ -2,7 +2,6 @@ body{
 
 
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 background-color: rgb(196, 237, 255);
 overflow:scroll;
 padding-left: 10vh;
@@ -202,6 +201,13 @@ strong{
     flex-direction: row;
  
     
+}
+.css-added-msg{
+    
+    margin-bottom :5px;
+    font-size: 12px;
+    margin-left: 55px;
+
 }
 .categories img,.categories2 img{
     height: 25vh;
