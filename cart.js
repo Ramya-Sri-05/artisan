@@ -1,4 +1,8 @@
-export const cart=[];
+export  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+function store(){
+  localStorage.setItem('cart',JSON.stringify(cart));
+}
 
 export function updateCart(productid){
     
@@ -13,13 +17,25 @@ export function updateCart(productid){
 
        if(matching){
          matching.quantity++;
+         store();
 
        }
        else{
          cart.push({
          productid:productid,
          quantity:1
+         
        })
+       store();
       
       }
 }
+
+
+export function removeItem(productid) {
+  cart = cart.filter((cartItem) => cartItem.productid !== productid);
+  store();
+  console.log(cart);
+}
+
+
