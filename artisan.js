@@ -34,7 +34,7 @@ document.querySelector(".js-product-container")
       
    })
 
-  function updateCartQunatity(){
+  function updateCartQunatity(){//it updates the web page so not moved to cart.js
       let cartQuantity=0;
 
       cart.forEach((cartItems) => {
