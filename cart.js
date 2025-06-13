@@ -1,4 +1,12 @@
-export  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+export  let cart;
+
+export function getCart() {
+  cart = JSON.parse(localStorage.getItem('cart')) || [];
+  return JSON.parse(localStorage.getItem('cart')) || [];
+}
+
+getCart();
+
 
 function store(){
   localStorage.setItem('cart',JSON.stringify(cart));
