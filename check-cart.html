@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - ArtisanBrush</title>
+  <link rel="stylesheet" href="artisan-styles.css" />
+  <style>
+    .cart-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .cart-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .cart-summary {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    
+    .remove-item{
+       text-align: center;
+        background-color:rgb(123, 226, 226);
+        border:0px;
+        padding: 5px;
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+    .remove-item:hover{
+       cursor: pointer;
+       border: .2px,solid, white ;
+       transform: scale(1.2);
+       background-color:rgb(23, 201, 201);
+
+       
+    }
+    .artisan-heading{
+    border:0 solid white ;
+    border-radius:10px;
+    flex: 0 0 auto;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(18, 133, 216);
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition:box-shadow 1.5s,background-color 1.5s;
+   
+
+    }
+.artisan-heading:hover{
+    background-color:cyan ;
+    box-shadow:1px 3px 10px rgb(0,0,50,0.8);
+    cursor:pointer;
+}
+
+.cart-summary {
+  margin:30px auto;
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color:rgb(196, 255, 255) ;
+  max-width: 400px;
+}
+
+.summary-box h2 {
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout-btn:hover {
+  background-color: #45a049;
+}
+
+  </style>
+</head>
+<body>
+   <a href="artisan.html"><button class="artisan-heading">Artisan</button></a>
+  <h1>Your Cart</h1>
+  <div id="cart-container"></div>
+  <div class="cart-summary" id="cart-summary"></div>
+
+  <script type="module" src="check-cart.js"> </script>
+</body>
+</html>
