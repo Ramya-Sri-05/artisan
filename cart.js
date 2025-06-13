@@ -35,7 +35,9 @@ export function updateCart(productid){
 export function removeItem(productid) {
   cart = cart.filter((cartItem) => cartItem.productid !== productid);
   store();
-  console.log(cart);
+  
+  
+
 }
 
 
