@@ -77,7 +77,7 @@ cart.forEach((cartItem) => {
 summary.innerHTML = `
   <div class="summary-box">
     <h2>Cart Summary</h2>
-    <p><strong>Total Price:</strong> $${formatCurrency(totalPrice*100)}</p>
+    <p><strong>Total Price:</strong> $${formatCurrency(totalPrice)}</p>
     <button class="checkout-btn">Proceed to Buy</button>
   </div>
 `;

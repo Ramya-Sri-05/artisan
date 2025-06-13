@@ -2,7 +2,7 @@ import {formatCurrency} from '../formatCurrency.js'
 
 describe('test suite: formatCurrency',() =>{
     it('converts into cents',() =>{
-        expect(formatCurrency(2000)).toEqual('20.00')
+        expect(formatCurrency(200)).toEqual('200.00')
     })
 
       it('works with 0',() =>{
@@ -10,6 +10,6 @@ describe('test suite: formatCurrency',() =>{
     })
 
     it('works with round',() =>{
-        expect(formatCurrency(2000.5)).toEqual('20.01')
+        expect(formatCurrency(20.5)).toEqual('21.00')
     })
 })
