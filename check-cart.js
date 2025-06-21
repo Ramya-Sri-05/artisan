@@ -1,6 +1,7 @@
 import { cart,removeItem } from './cart.js';
 import { formatCurrency } from './formatCurrency.js';
 import { products } from './products.js';
+import './backend-practice.js';
 
 function renderCart(){
 
